@@ -13,9 +13,7 @@ class GraphEdge;
 class GraphNode
 {
 private:
-    //// STUDENT CODE
-    ////
-
+    
     // data handles (owned)
     //std::vector<GraphEdge *> _childEdges;  // edges to subsequent nodes
     std::vector<std::unique_ptr<GraphEdge> > _childEdges;  // edges to subsequent nodes
@@ -26,8 +24,6 @@ private:
     
 	//std::unique_ptr<ChatBot> _chatBot;
 
-    ////
-    //// EOF STUDENT CODE
 
     // proprietary members
     int _id;
